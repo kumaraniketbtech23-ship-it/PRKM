@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRKM ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="background-music" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-button" onclick="toggleMusic()">
+    🎵 Play Music
+</button>
+    <div id="snow-container"></div>
+    <div class="hero">
+    <h1>Our Memories ❤️</h1>
+    <p>Every picture has a story.</p>
+    <span>Scroll down ↓</span>
+    <button class="enter-button" onclick="enterMemories()">
+    Enter Our Memories ❤️
+</button>
+    <button class="love-button" onclick="showMessage()">
+    A little message for you ❤️
+</button>
+
+<p id="love-message">
+    Some memories are not meant to be forgotten,
+    they are meant to be kept forever. ❤️
+</p>
+</div>
+<div class="timeline">
+    <a href="#memory1" class="timeline-dot active"></a>
+    <a href="#memory2" class="timeline-dot"></a>
+    <a href="#memory3" class="timeline-dot"></a>
+    <a href="#memory4" class="timeline-dot"></a>
+    <a href="#memory5" class="timeline-dot"></a>
+    <a href="#memory6" class="timeline-dot"></a>
+    <a href="#memory7" class="timeline-dot"></a>
+    <a href="#memory8" class="timeline-dot"></a>
+    <a href="#memory9" class="timeline-dot"></a>
+    <a href="#memory10" class="timeline-dot"></a>
+    <a href="#memory11" class="timeline-dot"></a>
+</div>
+<section class="memory" id="memory1">
+    <img 
+        src="images/memory1.jpeg" 
+        alt="December 2009"
+        onclick="openPhoto(this.src)"
+    >
+    
+    <p class="date">December 2009</p>
+
+    <h2>A Visit to the Golden Temple</h2>
+
+    <p class="moment">
+        A precious childhood memory from a visit to the Golden Temple
+        with her mother and father.
+    </p>
+</section>
+    <section class="memory" id="memory2">
+    <img 
+        src="images/memory2.jpeg" 
+        alt="September 2014"
+        onclick="openPhoto(this.src)"
+    >
+
+    <p class="date">September 2014</p>
+
+    <h2>A Beautiful Family Celebration</h2>
+
+    <p class="moment">
+        A beautiful moment captured at her uncle's marriage.
+    </p>
+</section>
+<!-- MEMORY 3 -->
+
+<section class="memory" id="memory3">
+
+    <img
+        src="images/memory3.jpeg"
+        alt="May 2015"
+        onclick="openPhoto(this.src)"
+    >
+
+    <p class="date">May 2015</p>
+
+    <h2>The Little Don of the Family 😎❤️</h2>
+
+    <p class="moment">
+        The day she officially became the little don of the family.
+        Some childhood memories are simply unforgettable. ❤️
+    </p>
+
+</section>
+<!-- MEMORY 4 -->
+
+<section class="memory" id="memory4">
+
+    <img
+        src="images/memory4.jpeg"
+        alt="2016"
+        onclick="openPhoto(this.src)"
+    >
+
+    <p class="date">2016</p>
+
+    <h2>Daddy's Little Queen 👑❤️</h2>
+
+    <p class="moment">
+        The year she became the little queen of her father's heart.
+        A beautiful bond that makes this memory truly special. ❤️
+    </p>
+
+</section>
+<!-- MEMORY 5 -->
+
+<section class="memory" id="memory5">
+
+    <img
+        src="images/memory5.jpeg"
+        alt="October 2018"
+        onclick="openPhoto(this.src)"
+    >
+
+    <p class="date">October 2018</p>
+
+    <h2>The Beginning of Something Special ❤️</h2>
+
+    <p class="moment">
+        The first time we started becoming truly close.
+        A small moment that slowly became something very special. ❤️
+    </p>
+
+</section>
+<!-- MEMORY 6 -->
+
+<section class="memory" id="memory6">
+
+    <img
+        src="images/memory6.jpeg"
+        alt="June 2023"
+        onclick="openPhoto(this.src)"
+    >
+
+    <p class="date">June 2023</p>
+
+    <h2>The Feeling I Couldn't Explain ❤️</h2>
+
+    <p class="moment">
+        You were looking gorgeous that time, and I was dying to talk to you,
+        but somehow it didn't happen. Still, somewhere in that moment,
+        I felt like there was a connection between us. ❤️
+    </p>
+
+</section>
+<!-- MEMORY 7 -->
+
+<section class="memory" id="memory7">
+
+    <img
+        src="images/memory7.jpeg"
+        alt="29 June 2024"
+        onclick="openPhoto(this.src)"
+    >
+
+    <p class="date special-date">29 JUNE 2024</p>
+
+    <h2>The Day Everything Changed ❤️</h2>
+
+    <p class="moment">
+        I was at my very lowest, and then suddenly, you entered my life again
+        and somehow made me feel complete. That was the moment I decided
+        that I would do everything I could to give you all the happiness
+        you deserve. ❤️
+    </p>
+
+</section>
+<!-- MEMORY 8 -->
+
+<section class="memory" id="memory8">
+
+    <img
+        src="images/memory8.jpeg"
+        alt="October 20 2025"
+        onclick="openPhoto(this.src)"
+    >
+
+    <p class="date">20 OCTOBER 2025</p>
+
+    <h2>We Chose Each Other ❤️</h2>
+
+    <p class="moment">
+        After so many fights, misunderstandings and difficult moments,
+        I realised that neither of us truly wanted to let go of the other.
+        Maybe that was when I understood that what we had was worth fighting for. ❤️
+    </p>
+
+</section>
+<!-- MEMORY 9 -->
+
+<section class="memory" id="memory9">
+
+    <img
+        src="images/memory9.jpeg"
+        alt="July 2026"
+        onclick="openPhoto(this.src)"
+    >
+
+    <p class="date">JULY 2026</p>
+
+    <h2>Before The Time Comes To Let Go ❤️</h2>
+
+    <p class="moment">
+        I noticed something that day — sometimes, letting go can come
+        before we are ready for it. And maybe that's what makes time so cruel.
+        So instead of waiting for the day when we have to let go,
+        I want to take the risk, live every moment, and make this life
+        as memorable as possible with you. Because when that day finally comes,
+        I want us to have a lifetime of beautiful memories to look back on. ❤️
+    </p>
+
+</section>
+<!-- MEMORY 10 -->
+
+<section class="memory" id="memory10">
+
+    <img
+        src="images/memory10.jpeg"
+        alt="Still Counting"
+        onclick="openPhoto(this.src)"
+    >
+
+    <p class="date">STILL COUNTING ❤️</p>
+
+    <h2>Those Eyes Have Me Under Control 👀❤️</h2>
+
+    <p class="moment">
+        Still counting the moments, the memories, and every little reason
+        to fall for you again. But this picture shows just one thing —
+        how easily you can control me with those eyes. One look from you,
+        and somehow I forget everything else around me. ❤️
+    </p>
+
+</section>
+<!-- MEMORY 11 -->
+
+<section class="memory" id="memory11">
+
+    <img
+        src="images/memory11.jpeg"
+        alt="Still Counting"
+        onclick="openPhoto(this.src)"
+    >
+
+    <p class="date">STILL COUNTING ❤️</p>
+
+    <h2>Your Safe Place ❤️</h2>
+
+    <p class="moment">
+        This picture shows how safe and comfortable you feel when you are
+        in your comfort zone, and honestly, that feeling means a lot to me.
+        I have something I want you to remember — whenever you feel low,
+        lost, or stuck in any problem, just remember me. You never have to
+        face everything alone. No matter what happens, I will always be
+        there for you, at any cost. ❤️
+    </p>
+
+</section>
+<!-- FINAL SECTION -->
+
+<section class="final-section">
+
+    <div class="final-heart">❤️</div>
+
+    <h2>Our Story Is Still Being Written...</h2>
+
+    <p>
+        These are not just memories.
+        These are little pieces of our story,
+        moments that I never want to forget.
+    </p>
+
+    <p>
+        And maybe the best part is...
+        our story isn't over yet. ❤️
+    </p>
+
+    <div class="final-line">∞</div>
+
+    <p class="final-love">
+        More memories to come...
+    </p>
+    <p class="signature">
+    Made with all my heart, just for you. ❤️
+</p>
+
+<p class="forever">
+    — Always yours ❤️
+</p>
+
+</section>
+<!-- Full Screen Photo Viewer -->
+<div id="photo-viewer" class="photo-viewer">
+
+    <button class="close-viewer" onclick="closePhoto()">
+        ×
+    </button>
+
+    <img id="viewer-image" src="" alt="Memory">
+
+</div>
+</body>
+<script src="script.js"></script>
+</html>
