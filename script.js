@@ -140,3 +140,7 @@ function enterMemories() {
         behavior: "smooth"
     });
 }
+function showMessage() {
+    const message = document.getElementById("love-message");
+    message.classList.toggle("show-message");
+}
