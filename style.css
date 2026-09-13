@@ -1175,3 +1175,201 @@ body::before {
         transform: translateY(0);
     }
 }
+/* ================================
+   PREMIUM HERO UPGRADE
+================================ */
+
+.hero {
+    min-height: 100vh;
+    padding: 40px 25px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    animation: heroAppear 1.8s ease forwards;
+}
+
+.hero h1 {
+    font-size: clamp(52px, 8vw, 100px);
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 1.05;
+
+    color: #ffd6e7;
+
+    text-shadow:
+        0 0 10px rgba(255, 180, 210, 0.8),
+        0 0 30px rgba(255, 100, 170, 0.5),
+        0 0 70px rgba(255, 80, 150, 0.25);
+
+    margin-bottom: 25px;
+
+    animation:
+        titleReveal 1.5s ease forwards,
+        titleGlow 3s ease-in-out infinite 1.5s;
+}
+
+.hero p {
+    font-size: clamp(18px, 3vw, 25px);
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.9);
+
+    margin-bottom: 25px;
+
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+
+    animation: subtitleReveal 1.5s ease 0.4s both;
+}
+
+.hero > span {
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: rgba(255, 210, 225, 0.75);
+
+    margin-bottom: 30px;
+
+    animation: scrollPulse 2s ease-in-out infinite;
+}
+
+/* Hero buttons */
+
+.hero button {
+    position: relative;
+    overflow: hidden;
+}
+
+.enter-button,
+.love-button {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        background 0.4s ease;
+}
+
+.enter-button:hover,
+.love-button:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+/* Soft shine passing through button */
+
+.enter-button::before,
+.love-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.18),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+    transition: left 0.7s ease;
+}
+
+.enter-button:hover::before,
+.love-button:hover::before {
+    left: 150%;
+}
+
+/* Hero animations */
+
+@keyframes heroAppear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes titleReveal {
+    from {
+        opacity: 0;
+        transform: translateY(35px) scale(0.95);
+        filter: blur(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes subtitleReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes titleGlow {
+    0%, 100% {
+        text-shadow:
+            0 0 10px rgba(255, 180, 210, 0.8),
+            0 0 30px rgba(255, 100, 170, 0.5);
+    }
+
+    50% {
+        text-shadow:
+            0 0 15px rgba(255, 200, 225, 1),
+            0 0 45px rgba(255, 100, 170, 0.7),
+            0 0 80px rgba(255, 80, 150, 0.3);
+    }
+}
+
+@keyframes scrollPulse {
+    0%, 100% {
+        opacity: 0.55;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+}
+
+/* Mobile Hero */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 100svh;
+        padding: 30px 18px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: 1px;
+    }
+
+    .hero p {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .hero > span {
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+}
